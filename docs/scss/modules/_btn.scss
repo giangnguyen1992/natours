@@ -41,12 +41,21 @@
     }
 
     &--white {
-    background-color: #fff;
-    color: $color-grey-dark;
+        background-color: #fff;
+        color: $color-grey-dark;
 
-        &::after {
-            background-color: #fff;
-        }
+            &::after {
+                background-color: #fff;
+            }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: #fff;
+
+            &::after {
+                background-color: $color-primary;
+            }
     }
 
     &--animated {
