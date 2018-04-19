@@ -4,6 +4,10 @@
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -11rem;
+
+    @include respond (tab-port) {
+        margin-bottom: 10rem 0;  
+    }
     
     & > * {
         transform: skewY(7deg);
@@ -18,6 +22,10 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(#000, .15);
     transition: all .2s;
+
+    @include respond (tab-port) {
+        padding: 2rem;  
+    }
     
 
     &__icon {
@@ -26,6 +34,10 @@
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond (tab-port) {
+            margin-bottom: 0;  
+        }
     }
 
     &:hover {
