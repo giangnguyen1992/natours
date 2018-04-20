@@ -7,7 +7,7 @@ let browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
     return gulp.src('./docs/scss/style.scss')
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'compressed'}))
     .on('error', function(errorInfo){
         console.log(errorInfo.toString());
         this.emit('end');
